@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<link href="/css/override.css" rel="stylesheet" type="text/css">
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  </header>
+
+  <div class="post-content">
+    {% include anchor_headings.html html=content anchorBody="<i class='fa fa-link header-link'></i>" %}
+  </div>
+
+</article>

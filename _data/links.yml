@@ -1,0 +1,39 @@
+- name: LinkedIn
+  url: https://linkedin.com/in/renan-af
+  label: renan-af
+
+- name: Twitter
+  url: https://www.twitter.com/renan_afranca
+  label: renan_afranca
+
+- name: GitHub
+  url: https://github.com/renanfranca
+  label: renanfranca
+
+- name: StackOverflow
+  url: https://stackoverflow.com/users/1184154/renan-franca?tab=profile
+  label: renan-franca
+
+- name: Dev.to
+  url: https://dev.to/renanfranca
+  label: renanfranca
+
+- name: Hashnode
+  url: https://hashnode.com/@renanfranca
+  label: renanfranca
+
+- name: Daily.dev
+  url: https://app.daily.dev/renanfranca
+  label: renanfranca
+
+- name: Polywork
+  url: https://www.polywork.com/renanfranca
+  label: renanfranca
+
+- name: Google Developers
+  url: https://g.dev/renanfranca
+  label: renanfranca
+  
+- name: Tealfeed
+  url: https://tealfeed.com/renanfranca
+  label: renanfranca
