@@ -1,8 +1,8 @@
-title: Machine/Deep Learning Blog
+title: Tech Problem Solving Blog
 author: Naveen Sathiyanathan
-description: A place for documenting my experiences and experiments on the theory and practice of machine/deep learning # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+description: A place for sharing my experience in solving real-world problems using data/programming in an efficient way.
 # The github repo that is to be used for looking up comments
-comments_repo: SNaveenMathew/stat_ml_blog
+comments_repo: SNaveenMathew/tech_non_tech_blog
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
