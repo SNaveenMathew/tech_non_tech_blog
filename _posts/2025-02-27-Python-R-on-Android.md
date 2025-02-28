@@ -2,11 +2,13 @@
 
 ### Background
 
-Working on R/Python in Android OS may sound like an artificial constraint, but I faced this scenario - I wanted to run a RShiny app, but my personal laptop stopped working and my shinyapps.io account hit the free tier limit. Experts claim Android OS is just a version of Linux, but I'm not an expert in this area. This short article covers how a layman (like me) can run R scripts in Android OS. Similar steps can be followed to install and run Python in Android OS. Clearly, this is not an everyday scenario; not even something someone would try for fun.
+Disclaimer: If one has the option, one should use rstudio.cloud and shinyapps.io to develop and deploy RShiny apps. Following this article is a waste of time.
 
-### Common Steps
+Working on R/Python in Android OS may sound like an artificial constraint, but I faced this scenario - I wanted to run a RShiny app, but I did not have the resources to run apps in the 'free tier' both locally and on the Cloud.
 
-#### Install Termux
+Experts claim Android OS is just a version of Linux, but I'm not an expert in this area. This short article covers how a layman (like me) can run R scripts in Android OS. Similar steps can be followed to install and run Python in Android OS. Clearly, this is not an everyday scenario; not even something worth trying for fun.
+
+### Install Termux
 
 DO NOT INSTALL FROM GOOGLE PLAY STORE - the version on Google Play Store was not updated in years, and lacks several basic Linux functionalities like `apt install`
 
