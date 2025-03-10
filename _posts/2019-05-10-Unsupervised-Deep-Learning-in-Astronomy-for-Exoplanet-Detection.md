@@ -1,3 +1,9 @@
+---
+layout: post
+date: 2019-05-10 12:00:00 -0500
+image: ../data/Transit_photometry.gif
+---
+
 ## Unsupervised Deep Learning in Astronomy for Exoplanet Candidate Identification
 
 ### Introduction

@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2019-01-11 12:00:00 -0500
-image: /data/multiprocessing.jpg
+image: ../data/multiprocessing.jpg
 ---
 
 ## Speeding-up 'diff' between Consecutive Rows in Python on My Laptop
@@ -17,17 +17,17 @@ My laptop configuration is decent: Ubuntu 18.04, 16 GB DDR4, Intel core i7–875
 *Without mentioning the type of data, here are few anonymized samples (dy's can be positive or negative):*
 
 <figure>
-  <img src="../../../data/example1.jpg">
+  <img src="../data/example1.jpg">
   <figcaption>Example 1</figcaption>
 </figure>
 
 <figure>
-  <img src="../../../data/example2.jpg">
+  <img src="../data/example2.jpg">
   <figcaption>Example 2</figcaption>
 </figure>
 
 <figure>
-  <img src="../../../data/example3.jpg">
+  <img src="../data/example3.jpg">
   <figcaption>Example 3</figcaption>
 </figure>
 
@@ -40,17 +40,17 @@ My laptop configuration is decent: Ubuntu 18.04, 16 GB DDR4, Intel core i7–875
 *Answer:* Other columns (not shown above) in the data set help in identifying the difference.
 
 <figure>
-  <img src="../../../data/desired1.jpg">
+  <img src="../data/desired1.jpg">
   <figcaption>Desired output: Example 1</figcaption>
 </figure>
 
 <figure>
-  <img src="../../../data/desired2.jpg">
+  <img src="../data/desired2.jpg">
   <figcaption>Desired output: Example 2</figcaption>
 </figure>
 
 <figure>
-  <img src="../../../data/desired3.jpg">
+  <img src="../data/desired3.jpg">
   <figcaption>Desired output:Example 3</figcaption>
 </figure>
 
@@ -73,7 +73,7 @@ My laptop configuration is decent: Ubuntu 18.04, 16 GB DDR4, Intel core i7–875
 I believe this one doesn't require explanation. Sample code:
 
 <figure>
-  <img src="../../../data/brute_force.jpg">
+  <img src="../data/brute_force.jpg">
   <figcaption>Brute force</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ I believe this one doesn't require explanation. Sample code:
 This code is similar to the brute force code.
 
 <figure>
-  <img src="../../../data/row_wise_brute_force.jpg">
+  <img src="../data/row_wise_brute_force.jpg">
   <figcaption>Row-wise: still brute force</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ This code is similar to the brute force code.
 Idea: look for a matching id and use it for finding difference. Lookup should be quick, so a dictionary can be used with the id value as the key.
 
 <figure>
-  <img src="../../../data/dictionary.jpg">
+  <img src="../data/dictionary.jpg">
   <figcaption>Improved search: dictionary</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ Idea: look for a matching id and use it for finding difference. Lookup should be
 Idea: Since both id's are sorted (assumed as descending order in the code below), a single loop can be used to traverse through both id's.
 
 <figure>
-  <img src="../../../data/slightly_improved_search.jpg">
+  <img src="../data/slightly_improved_search.jpg">
   <figcaption>Slightly improved search</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ Let us iterate through 2 examples:
 *Example 1:*
 
 <figure>
-  <img src="../../../data/example1.jpg">
+  <img src="../data/example1.jpg">
   <figcaption>Example 1</figcaption>
 </figure>
 
@@ -120,7 +120,7 @@ Iteration 2: i=1 and while loop exits at j=1. Id's match, but diff=0 — therefo
 *Example 2:*
 
 <figure>
-  <img src="../../../data/example2.jpg">
+  <img src="../data/example2.jpg">
   <figcaption>Example 2</figcaption>
 </figure>
 
@@ -131,14 +131,14 @@ Iteration 2: i=1 and the while loop exits at j=0. Id’s match, but diff=0 — t
 #### Ultimatum: multi-processing
 
 <figure>
-  <img src="../../../data/multiprocessing.jpg">
+  <img src="../data/multiprocessing.jpg">
   <figcaption>Multiprocessing!</figcaption>
 </figure>
 
 #### Run-time Comparison
 
 <figure>
-  <img src="../../../data/runtime_comparison.jpg">
+  <img src="../data/runtime_comparison.jpg">
   <figcaption>Run-time comparison</figcaption>
 </figure>
 

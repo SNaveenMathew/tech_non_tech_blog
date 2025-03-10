@@ -1,3 +1,8 @@
+---
+layout: post
+date: 2025-02-27 12:00:00 -0500
+---
+
 ## Running Python or R in Android OS
 
 ### Background

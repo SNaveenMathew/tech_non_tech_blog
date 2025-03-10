@@ -1,3 +1,9 @@
+---
+layout: post
+date: 2021-10-31 12:00:00 -0500
+image: ../data/R_troll.jpg
+---
+
 ## Does python prioritize True in 'OR' and False in 'AND' condition checks?
 
 ### Background

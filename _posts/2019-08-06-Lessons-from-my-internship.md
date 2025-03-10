@@ -1,3 +1,8 @@
+---
+layout: post
+date: 2019-08-06 12:00:00 -0500
+---
+
 ## Lessons from my Internship (and Immediate Aftermath)
 
 ### Introduction
