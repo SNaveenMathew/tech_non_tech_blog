@@ -1,3 +1,9 @@
+---
+layout: post
+date: 2019-09-21 12:00:00 -0500
+image: ../data/Transit_photometry.gif
+---
+
 ## Search for Exoplanets - Humans vs. Stars
 
 ### Kepler
