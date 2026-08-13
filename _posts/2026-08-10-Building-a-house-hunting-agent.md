@@ -23,6 +23,11 @@ Only publicly available data is ingested and used to answer questions.
 
 ## Architecting the new app
 
+<figure>
+  <img src="../../../data/agent_design.png">
+  <figcaption>App + Agent Design</figcaption>
+</figure>
+
 ### 'Static' data layer
 
 Redfin favorites with additional data at a house level is the starting point of the new app. This app uses a FastAPI backend, two separate LangGraph agents (general and house-specific), a DuckDB schema and a ChromaDB vector store for descriptions and photos. The following services are executed for loading different types of data:
