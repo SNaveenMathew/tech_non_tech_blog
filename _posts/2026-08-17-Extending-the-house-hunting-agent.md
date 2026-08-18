@@ -62,6 +62,52 @@ The design was not a coincidence. Adding new data to my old app was a challengin
 
 The per-house agent's five tools (comps math, the NRI lookup, and the rest) are still hand-written and not schema-driven - this is a problem for another day.
 
+## A real example to top it all off
+
+**Visuals:**
+
+<figure>
+  <img src="../../../data/pittsburgh_biking.png">
+  <figcaption>Bike routes in Pittsburgh</figcaption>
+</figure>
+
+<figure>
+  <img src="../../../data/pittsburgh_crime.png">
+  <figcaption>Crime in Pittsburgh</figcaption>
+</figure>
+
+**Question to the agent:** Find a bike path between 529 Peebles St, Regent Square, PA 15221 and Highland Park, Pittsburgh that avoids crime prone areas.
+
+**Agent reponse:**
+
+The following bike route from 529 Peebles St, Regent Square to Highland Park, Pittsburgh is supported by the BikePGH infrastructure network.
+
+Route Summary
+Distance: 3.42 miles
+Estimated Duration: 20.5 minutes
+Infrastructure Types: The route utilizes a variety of bike-friendly paths, including Bike Lanes, Sharrows, On Street Bike Routes, and Cautionary Bike Routes.
+Safety Note
+While the route follows documented bicycle infrastructure, please note that the area contains recorded crime incidents (such as theft, burglary, and vandalism) in the vicinity of the route. This route is selected based on the availability of bike-specific infrastructure and does not guarantee safety.
+
+Turn-by-Turn Directions
+Start on BikePGH mapped infrastructure for 0.49 miles.
+Turn right and continue on BikePGH mapped infrastructure for 0.07 miles.
+Turn left and continue on BikePGH mapped infrastructure for 0.14 miles.
+Turn right and continue on BikePGH mapped infrastructure for 0.27 miles.
+Turn left and continue on BikePGH mapped infrastructure for 0.07 miles.
+Turn right and continue on BikePGH mapped infrastructure for 0.48 miles.
+Turn left and continue on BikePGH mapped infrastructure for 0.36 miles.
+Turn right and continue on BikePGH mapped infrastructure for 0.32 miles.
+Turn left and continue on BikePGH mapped infrastructure for 0.09 miles.
+Turn right and continue on BikePGH mapped infrastructure for 0.72 miles.
+Turn right and continue on BikePGH mapped infrastructure for 0.23 miles.
+Turn left and continue on BikePGH mapped infrastructure for 0.20 miles.
+
+<figure>
+  <img src="../../../data/pittsburgh_crime_bike_route.png">
+  <figcaption>Agent generated bike route accounting for crime</figcaption>
+</figure>
+
 ## Pending
 
 - National Walkability Index
