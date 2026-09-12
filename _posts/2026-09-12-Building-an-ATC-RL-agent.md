@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2026-09-12 12:00:00 -0500
+date: 2026-09-12 00:00:00 -0500
 ---
 
 ## Building an ATC reinforcement-learning agent — going beyond FlightPathAnalysis's pipeline
