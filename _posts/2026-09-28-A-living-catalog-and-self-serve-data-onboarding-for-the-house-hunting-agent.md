@@ -62,7 +62,7 @@ Approved data is accessible instantly (without server restarts) to the users bec
 - **Incremental Vector Search**: ChromaDB embeds only new or modified metadata on version bumps, falling back to lexical search if local embedding models are offline.
 
 <figure>
-  <img src="../../../data/data-catalog.png">
+  <img src="../../../data/data_catalog.png">
   <figcaption>Data catalog schema map</figcaption>
 </figure>
 
