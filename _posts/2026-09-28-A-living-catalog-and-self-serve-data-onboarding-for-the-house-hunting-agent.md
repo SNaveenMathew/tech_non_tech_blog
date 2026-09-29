@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-date: 2026-09-20 12:00:00 -0400
+date: 2026-09-28 12:00:00 -0400
 ---
 
 ## A living catalog and self-serve data onboarding for the house-hunting agent
