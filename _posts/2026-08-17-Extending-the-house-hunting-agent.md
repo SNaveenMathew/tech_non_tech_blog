@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2026-08-17 12:00:00 -0500
+description: "Crime and bike-lane data went in by describing tables and joins in a catalog, not by writing tools. Routing needed real code, so it got its own tool; a Pittsburgh route that avoids crime hotspots shows the result."
+image: /assets/previews/agent-extend.webp
 ---
 
 ## Extending the house-hunting agent - adding datasets without adding code

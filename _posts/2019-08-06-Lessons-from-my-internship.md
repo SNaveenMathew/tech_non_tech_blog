@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2019-08-06 12:00:00 -0500
+description: "A confidential reinforcement-learning problem, with the details abstracted away: why DQN experiments took about 20 days each, why supervised bootstrapping failed, and the simpler approach the data suggested."
+image: /assets/previews/rl-internship.webp
 ---
 
 ## Lessons from my Internship (and Immediate Aftermath)

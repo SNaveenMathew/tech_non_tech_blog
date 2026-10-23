@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2026-08-23 12:00:00 -0400
+description: "Traces showed one agent was doing too much. Phoenix tracing, a larger evaluation set, a separate query planner and a richer schema catalog made failures easier to locate and fix."
+image: /assets/previews/agent-sharpen.webp
 ---
 
 ## Sharpening the house hunting agent

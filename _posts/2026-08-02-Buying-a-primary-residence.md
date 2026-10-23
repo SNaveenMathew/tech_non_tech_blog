@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2026-08-02 12:00:00 -0500
+description: "Free datasets on hazards, crime, affordability and market cycles that listing sites don't surface, why fair-housing rules limit what they can say, and a dashboard that layers them over Redfin favorites."
+image: /assets/previews/primary-residence.webp
 ---
 
 ## Buying a primary residence - what Redfin, Zillow and Realtor can't show you

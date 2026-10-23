@@ -1,7 +1,8 @@
 ---
 layout: post
 date: 2021-10-31 12:00:00 -0500
-image: ../data/R_troll.jpg
+description: "Recursive experiments show Python evaluates and/or left to right and stops early. Then NaN enters: np.nan or True gives nan, while np.logical_or(False, np.nan) gives True."
+image: /assets/previews/python-booleans.webp
 ---
 
 ## Does python prioritize True in 'OR' and False in 'AND' condition checks?

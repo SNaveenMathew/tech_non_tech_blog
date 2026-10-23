@@ -1,6 +1,9 @@
 ---
 layout: post
 date: 2026-10-02 12:00:00 -0400
+description: "Map layers are built from the catalog, crime density plays back year by year, and answers arrive as tables, charts and maps instead of walls of text. Also adds Zillow-based valuation."
+image: /assets/previews/agent-canvas.webp
+video: /assets/previews/agent-canvas.mp4
 ---
 
 ## From catalog to a true 'blank canvas': user defines the flow

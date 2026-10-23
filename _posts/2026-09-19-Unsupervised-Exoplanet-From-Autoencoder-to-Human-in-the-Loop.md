@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2026-09-19 00:00:00 -0500
+description: "An exoplanet anomaly detector rebuilt around the data: gap-aware preprocessing, a convolutional autoencoder, periodicity checks, and a review dashboard whose labels become training data. Still an anomaly detector, not a validated classifier."
+image: /assets/previews/exoplanet-hitl.webp
 ---
 
 ## Unsupervised Exoplanet Detection - from an Autoencoder to a Human-in-the-Loop Pipeline

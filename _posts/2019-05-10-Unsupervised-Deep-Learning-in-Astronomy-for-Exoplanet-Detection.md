@@ -1,7 +1,9 @@
 ---
 layout: post
 date: 2019-05-10 12:00:00 -0500
-image: ../data/Transit_photometry.gif
+description: "An LSTM autoencoder learns what a star normally does, so transit-like dips stand out without labels. On 30 Kepler light curves it found candidates, but with many false positives that phase folding reduced."
+image: /assets/previews/exoplanet-lstm.webp
+video: /assets/previews/exoplanet-lstm.mp4
 ---
 
 ## Unsupervised Deep Learning in Astronomy for Exoplanet Candidate Identification

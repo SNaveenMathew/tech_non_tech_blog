@@ -1,6 +1,8 @@
 ﻿---
 layout: post
 date: 2026-09-28 12:00:00 -0400
+description: "New datasets are onboarded through a catalog in DuckDB: deterministic code measures how tables join, a local model drafts the descriptions, and a person approves before the agent can use the data."
+image: /assets/previews/agent-catalog.webp
 ---
 
 ## A living catalog and self-serve data onboarding for the house-hunting agent

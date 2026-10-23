@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2025-03-20 12:00:00 -0500
+description: "RTX 4080 and 4090 laptops had no standard price and sold out fast, so I tracked listings in a small database and dashboard. How that data shaped what I bought, and what I paid."
+image: /assets/previews/gpu-laptop.webp
 ---
 
 ## Buying a Laptop with a Dedicated GPU

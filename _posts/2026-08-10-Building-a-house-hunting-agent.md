@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2026-08-10 12:00:00 -0500
+description: "An app for the questions Redfin and Zillow can't answer: two LangGraph agents over DuckDB and ChromaDB, running on a local model. How it's built, and where a small model needed extra scaffolding."
+image: /assets/previews/agent-build.webp
 ---
 
 ## Building a house-hunting agent - going beyond a guided story-driven dashboard

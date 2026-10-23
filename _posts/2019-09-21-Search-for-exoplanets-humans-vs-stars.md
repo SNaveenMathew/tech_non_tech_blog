@@ -1,7 +1,9 @@
 ---
 layout: post
 date: 2019-09-21 12:00:00 -0500
-image: ../data/Transit_photometry.gif
+description: "Volunteer tagging on Zooniverse takes minutes per light curve. The proposal: let an unsupervised model pre-mark candidates so people only confirm or reject them, with credibility scores for taggers."
+image: /assets/previews/exoplanet-humans.webp
+video: /assets/previews/exoplanet-humans.mp4
 ---
 
 ## Search for Exoplanets - Humans vs. Stars

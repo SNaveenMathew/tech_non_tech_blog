@@ -1,6 +1,8 @@
 title: Tech Problem Solving Blog
 author: Naveen Sathiyanathan
 description: A place for sharing my experience in solving real-world problems using data/programming in an efficient way.
+# Short line shown above the article list on the landing page
+tagline: What I built, what broke, and what I measured.
 # The github repo that is to be used for looking up comments
 comments_repo: SNaveenMathew/tech_non_tech_blog
 
@@ -54,3 +56,11 @@ defaults:
       tags: Other
 
 future: false
+
+# Not part of the published site
+exclude:
+  - scripts
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - vendor

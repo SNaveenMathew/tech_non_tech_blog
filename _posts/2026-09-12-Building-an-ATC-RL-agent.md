@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2026-09-12 00:00:00 -0500
+description: "A Dueling Double DQN that issues heading, altitude and speed instructions, a simulator to test it, and a radar-style visualizer. Training diverged until rewards were rescaled before the replay buffer."
+image: /assets/previews/atc-rl.webp
 ---
 
 ## Building an ATC reinforcement-learning agent — going beyond FlightPathAnalysis's pipeline

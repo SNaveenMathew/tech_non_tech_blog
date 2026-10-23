@@ -1,7 +1,8 @@
 ---
 layout: post
 date: 2019-01-11 12:00:00 -0500
-image: ../data/multiprocessing.jpg
+description: "Computing consecutive-row differences on 1.3 million rows a day took four hours by brute force. Better search and multiprocessing cut it to four minutes; each step is timed."
+image: /assets/previews/consecutive-diff.webp
 ---
 
 ## Speeding-up 'diff' between Consecutive Rows in Python on My Laptop

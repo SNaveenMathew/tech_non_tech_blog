@@ -1,6 +1,8 @@
 ---
 layout: post
 date: 2025-02-27 12:00:00 -0500
+description: "Running R or Python on an Android tablet: Termux from F-Droid, one install route that hit a dead end, one that worked, and how to open a Shiny app in the browser without a windowing system."
+image: /assets/previews/android-r.webp
 ---
 
 ## Running Python or R in Android OS
