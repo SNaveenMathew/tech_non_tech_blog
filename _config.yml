@@ -25,9 +25,7 @@ linkedin_username: SNaveenMathew
 #    twitter: jekyllrb
 
 header_pages:
-  - about.html
   - timeline.html
-  - archive.html
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########

@@ -4,21 +4,11 @@
     <span class="pager-label">Previous post</span>
     <span class="pager-title">{{ page.previous.title | escape }}</span>
   </a>
-  {%- else %}
-  <a class="pager-link pager-prev" href="{{ '/archive.html' | relative_url }}">
-    <span class="pager-label">Blog archive</span>
-    <span class="pager-title">All previous articles</span>
-  </a>
   {%- endif %}
   {%- if page.next.url %}
   <a class="pager-link pager-next" href="{{ page.next.url | relative_url }}" rel="next">
     <span class="pager-label">Next post</span>
     <span class="pager-title">{{ page.next.title | escape }}</span>
-  </a>
-  {%- else %}
-  <a class="pager-link pager-next" href="{{ '/archive.html' | relative_url }}">
-    <span class="pager-label">Blog archive</span>
-    <span class="pager-title">All previous articles</span>
   </a>
   {%- endif %}
 </nav>

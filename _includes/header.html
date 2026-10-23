@@ -3,6 +3,7 @@
     <a class="site-name" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
 
     <nav class="site-nav" aria-label="Main">
+      <a href="https://snaveenmathew.github.io/">About</a>
       {%- for path in site.header_pages -%}
         {%- assign nav_page = site.pages | where: "path", path | first -%}
         {%- if nav_page.title -%}
