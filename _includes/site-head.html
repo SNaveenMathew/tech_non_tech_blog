@@ -1,0 +1,34 @@
+{%- comment -%}
+  <head> for every page that uses the default layout (landing page, articles, archive, other pages).
+  The About page has its own layout and keeps using head.html.
+{%- endcomment -%}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  {%- seo -%}
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  {%- feed_meta -%}
+  {%- if page.draft == true %}
+  <meta name="robots" content="noindex,nofollow">
+  {%- endif %}
+
+  {%- comment -%} Apply a saved theme choice before first paint to avoid a flash. {%- endcomment %}
+  <script>
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved);
+    } catch (e) {}
+  </script>
+
+  <link rel="preload" href="{{ '/assets/fonts/archivo-var.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/literata-var.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+
+  {%- comment -%} Opt-in: add `math: true` to a post's front matter to load MathJax. {%- endcomment %}
+  {%- if page.math %}
+  <script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], processEscapes: true } };</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+  {%- endif %}
+</head>

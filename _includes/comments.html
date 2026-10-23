@@ -1,10 +1,17 @@
-<div class="no-print">
-    <script src="https://utteranc.es/client.js"
-            repo="{{ site.comments_repo }}"
-            issue-term="og:title"
-            label="Comments"
-            theme="preferred-color-scheme"
-            crossorigin="anonymous"
-            async>
-    </script>
-</div>
+<section class="comments no-print" aria-label="Comments">
+  <script>
+    (function () {
+      var attr = document.documentElement.getAttribute('data-theme');
+      var dark = attr ? attr === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var s = document.createElement('script');
+      s.src = 'https://utteranc.es/client.js';
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      s.setAttribute('repo', '{{ site.comments_repo }}');
+      s.setAttribute('issue-term', 'og:title');
+      s.setAttribute('label', 'Comments');
+      s.setAttribute('theme', dark ? 'github-dark' : 'github-light');
+      document.currentScript.parentNode.appendChild(s);
+    })();
+  </script>
+</section>

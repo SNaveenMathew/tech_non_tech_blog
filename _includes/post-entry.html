@@ -1,0 +1,38 @@
+{%- comment -%}
+  One article on the landing page.
+  Params: post, eager (true for the first entry: loads its preview immediately).
+  Front matter used: image (still, 8:5), video (optional looping mp4; `image` is its poster),
+  description (summary; falls back to the excerpt).
+{%- endcomment -%}
+{%- assign p = include.post -%}
+{%- assign words = p.content | number_of_words -%}
+{%- assign minutes = words | plus: 219 | divided_by: 220 -%}
+{%- if p.description -%}
+  {%- assign summary = p.description -%}
+{%- else -%}
+  {%- assign summary = p.excerpt | strip_html | strip_newlines | truncatewords: 32 -%}
+{%- endif -%}
+<li class="entry">
+  {%- if p.image %}
+  <div class="entry-media">
+    {%- if p.video %}
+    <video muted loop playsinline preload="none" width="800" height="500" poster="{{ p.image | relative_url }}" data-preview aria-hidden="true" tabindex="-1">
+      <source src="{{ p.video | relative_url }}" type="video/mp4">
+    </video>
+    {%- else %}
+    <img src="{{ p.image | relative_url }}" width="800" height="500" alt=""{% if include.eager %} fetchpriority="high"{% else %} loading="lazy" decoding="async"{% endif %}>
+    {%- endif %}
+  </div>
+  {%- else %}
+  <div class="entry-media entry-media--empty" aria-hidden="true"></div>
+  {%- endif %}
+
+  <div class="entry-body">
+    <p class="entry-meta">
+      <time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%b %-d" }}</time>
+      <span>{{ minutes }} min read</span>
+    </p>
+    <h3 class="entry-title"><a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a></h3>
+    <p class="entry-summary">{{ summary | escape }}</p>
+  </div>
+</li>

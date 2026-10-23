@@ -1,30 +1,17 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
-      </div>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-about">
+      {%- if site.author %}<p class="footer-author">{{ site.author | escape }}</p>{% endif %}
+      <p>{{ site.description | escape }}</p>
     </div>
 
-    <div class="social-links">
-      {%- include social.html -%}
-    </div>
+    <ul class="footer-links">
+      {%- if site.github_username %}<li><a href="https://github.com/{{ site.github_username }}">GitHub</a></li>{% endif %}
+      {%- if site.linkedin_username %}<li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a></li>{% endif %}
+      {%- if site.twitter_username %}<li><a href="https://twitter.com/{{ site.twitter_username }}">X</a></li>{% endif %}
+      <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+    </ul>
 
+    <p class="footer-credit">The About page is adapted from <a href="https://renanfranca.github.io/">Renan Franca’s portfolio</a>.</p>
   </div>
-
 </footer>

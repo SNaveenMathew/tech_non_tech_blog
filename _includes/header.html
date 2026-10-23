@@ -1,0 +1,21 @@
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-name" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+    <nav class="site-nav" aria-label="Main">
+      {%- for path in site.header_pages -%}
+        {%- assign nav_page = site.pages | where: "path", path | first -%}
+        {%- if nav_page.title -%}
+        <a href="{{ nav_page.url | relative_url }}"{% if page.url == nav_page.url %} aria-current="page"{% endif %}>{{ nav_page.title | escape }}</a>
+        {%- endif -%}
+      {%- endfor -%}
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch color theme">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 3.5a8.5 8.5 0 0 0 0 17z" fill="currentColor"/>
+      </svg>
+    </button>
+  </div>
+</header>
