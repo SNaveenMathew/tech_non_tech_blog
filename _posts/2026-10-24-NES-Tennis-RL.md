@@ -2,7 +2,7 @@
 layout: post
 date: 2026-10-24 00:00:00 -0400
 description: "A custom ROM patcher makes NES Tennis actually trainable. The RL model is not working: early policies refused to serve because that turned out to be the safest strategy. Using an LLM instead would only make things worse."
-image: /assets/previews/nes-tennis-rl.webp
+image: /assets/previews/tennis_point_demo.gif
 ---
 
 ## Teaching an RL agent to play NES Tennis - a work in progress
