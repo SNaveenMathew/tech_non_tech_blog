@@ -55,7 +55,23 @@ Offline sanity checks pass - optimizer updates are stable, imitation loss decrea
 
 ### Enhancement efforts: demonstrations and sequence tagging
 
-The current effort focuses on making better use of recorded human gameplay. After collecting demonstrations, each point is tagged with task-level segment labels: identifying which frames correspond to `serve_timing`, `intercept_track`, `hold_cover`, and related actions. The schema uses thirteen independent and mutually exclusive labels, each with defined boundary conditions. For instance, `intercept_track` only applies when the player is actively moving to reach an incoming ball, excluding the shot button press itself. `hold_cover` applies only during deliberate tactical positioning, not idle waiting.
+The current effort focuses on making better use of recorded human gameplay. After collecting demonstrations, each point is tagged with task-level segment labels: identifying which frames correspond to `serve_timing`, `intercept_track`, `hold_cover`, and related actions. The schema uses thirteen independent and mutually exclusive skill labels, each with strict boundary conditions:
+
+| Skill | Phase | Description |
+| :--- | :--- | :--- |
+| `serve_timing` | Serve | Deliberate positioning and toss timing before the serve stroke starts; excludes ball execution and flight. |
+| `serve_placement_power` | Serve | Directional steering and power input during serve execution. |
+| `serve_recovery` | Serve | Movement back toward a neutral court position immediately following a serve. |
+| `receive_position` | Receive | Anticipatory footwork and court positioning while waiting for the opponent's serve. |
+| `return_stroke_timing` | Receive | Triggering and timing the return shot against an incoming serve. |
+| `intercept_track` | Rally | Active movement to intercept an incoming live ball; ends before entering the shot-timing window. |
+| `hold_cover` | Rally | Deliberately holding a tactical court position to defend open angles while the opponent plays the ball. |
+| `recover_reposition` | Rally | Re-centering and returning to a balanced baseline or court position after hitting a rally shot. |
+| `approach_net` | Rally | Decisive forward movement toward the net to cut off the ball for a volley. |
+| `retreat_lob` | Rally | Backwards tracking and retreating to recover against an overhead lob. |
+| `stroke_selector` | Rally | Selecting shot angle and trajectory (e.g. cross-court vs down-the-line) prior to contact. |
+| `stroke_timing` | Rally | The critical decision window to swing at the precise contact frame rather than waiting. |
+| `transition_wait_reposition` | Transition | Setup and dead-ball positioning between points or before the serve sequence begins. |
 
 A Streamlit annotation app handles this tagging workflow. It presents a video preview rendered from recorded frames, provides an interactive table for setting segment boundaries and labels, and exports the structured sequences for the training pipeline.
 
