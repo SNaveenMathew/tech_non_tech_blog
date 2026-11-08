@@ -16,7 +16,7 @@ The animation compares four recorded arrivals to JFK. Their first retained point
 
 <figure>
   <iframe src="../../../assets/flightpath-jfk-arrivals.html" title="Rotatable animation of four JFK arrival tracks" loading="lazy" style="width: 100%; height: 800px; border: 0;"></iframe>
-  <figcaption>Select a flight below the plot and use Follow to keep it centered. Drag to rotate and scroll to zoom. Each track starts at its first retained sample. <a href="../../../assets/flightpath-jfk-arrivals.html">Open the comparison in its own page</a>.</figcaption>
+  <figcaption>Select a flight below the plot, use Follow to keep it centered and toggle Ghosts to view concurrent neighborhood traffic. Drag to rotate and scroll to zoom. Each track starts at its first retained sample. <a href="../../../assets/flightpath-jfk-arrivals.html">Open the comparison in its own page</a>.</figcaption>
 </figure>
 
 ### Reviewing flight phases
@@ -24,3 +24,11 @@ The animation compares four recorded arrivals to JFK. Their first retained point
 The phase labels are estimates from the ADS-B track, not labels read from a controller's record. To tag the flight phase for each new point, the app looks at that point and recent ones before it. It checks the altitude trend over time and waits for a climb or descent to persist before changing phase, so that one noisy altitude reading will not immediately flip the label (ADS-B tracks are noisy). When an aircraft is descending toward JFK, its distance, height above the airport and rate of approach help distinguish an approach from a descent farther away. A sustained, nearly level track is labeled cruise farther from the airport and level flight nearer to it. The estimate does not use later points in the flight.
 
 Using the newly designed tool the user can select a time range in the animation or timeline, assign a phase, choose a confidence level and leave a note. The predicted and manual labels appear on separate timeline rows, so the user can see where they agree or differ. The report counts agreement across tagged points and lists disagreements with the altitude and evidence behind the estimate. The future plan is to inspect those cases before changing the phase rules and export the tags for expert review (this is not my first crowd-sourcing effort). The manual labels give me a way to check the estimates against the track; they do not make the estimates ground truth - work in progress.
+
+### Neighborhood ghosts and separation
+
+A single track makes an approach look quiet. The reality is crowded. To see what each flight shared the sky with, I built a neighborhood index that pairs sessions overlapping in both time and airspace across the 48-hour collection.
+
+Scanning all 1,828 sessions, the index flags nearby traffic within a 15-nautical-mile bubble. It checks separation against FAA terminal rules, using 3 nautical miles horizontally and 1,000 feet vertically for an alert, or 5 nautical miles and 2,000 feet for caution. Another check tags flights following along the same corridor as in-trail.
+
+In the animation, turning on Ghosts shows those concurrent tracks as translucent paths. These markers move in lockstep with the clock, placing neighboring planes where they flew at that exact second. A connector line and readout show real-time distance to the closest traffic, so you can watch two flights merge toward the runway or hold their spacing.
