@@ -35,6 +35,8 @@ In the animation, turning on 'ghosts' shows those concurrent tracks as transluce
 
 ### An interesting case
 
-Things become more interesting when '0c208c · 0c208c_S2 · 38 min' is selected from the bottom and 'ghosts' is turned on. The animation shows the other sessions progressing as usual, but this session had to take a longer route initially to avoid a conflict with a1bc92 that crossed the 'template path' - think of this like car traffic around a multi-way stop sign in North America. However, 0c208c had more than the required separation from a1bc92 - so, 0c208c took a shorter route to intercept the final landing template path.
+Selecting `0c208c · 0c208c_S2 · 38 min` and turning on ghosts reveals why this arrival took noticeably longer than the others. Instead of turning directly toward the runway from the south, the aircraft flew an extended path north past JFK, leveling off at 4,000 ft before turning back southwest.
 
-This visualizations sits in the middle of the transition towards a reinforcement learning formulation that can solve ATC. These subtle discoveries are easy to spot manually. Identifying / labeling these appropriately using raw / processed ADS-B data is still challenging (need to think about scalability as well) - I already started work on the [repo](https://github.com/SNaveenMathew/atc_app), but an efficacious reinforcement learning implementation has to wait.
+With ghosts enabled, the context becomes visible. A neighboring arrival, `a1bc92`, was flying ahead in the same sector at 3,000 ft. The extended loop kept `0c208c` sequenced behind `a1bc92` with vertical separation until `a1bc92` cleared the approach corridor, allowing `0c208c` to turn inbound for landing.
+
+This animation sits in the middle of raw ADS-B trajectories and automated airspace modeling. Patterns that stand out immediately to a human observer remain hard to label reliably from noisy ADS-B data. I have started exploring reinforcement learning in a separate [repository](https://github.com/SNaveenMathew/atc_app), looking at solving sequencing and conflict detection using labeled ADS-B data.
