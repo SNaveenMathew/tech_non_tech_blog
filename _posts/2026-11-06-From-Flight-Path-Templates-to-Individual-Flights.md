@@ -31,4 +31,10 @@ A single track makes an approach look quiet. The reality is crowded. To see what
 
 Scanning all 1,828 sessions, the index flags nearby traffic within a 15-nautical-mile bubble. It checks separation against FAA terminal rules, using 3 nautical miles horizontally and 1,000 feet vertically for an alert, or 5 nautical miles and 2,000 feet for caution. Another check tags flights following along the same corridor as in-trail.
 
-In the animation, turning on Ghosts shows those concurrent tracks as translucent paths. These markers move in lockstep with the clock, placing neighboring planes where they flew at that exact second. A connector line and readout show real-time distance to the closest traffic, so you can watch two flights merge toward the runway or hold their spacing.
+In the animation, turning on 'ghosts' shows those concurrent tracks as translucent paths. These markers move in lockstep with the clock, placing neighboring planes where they flew at that exact second. A connector line and readout show real-time distance to the closest traffic, so you can watch two flights merge toward the runway or hold their spacing.
+
+### An interesting case
+
+Things become more interesting when '0c208c · 0c208c_S2 · 38 min' is selected from the bottom and 'ghosts' is turned on. The animation shows the other sessions progressing as usual, but this session had to take a longer route initially to avoid a conflict with a1bc92 that crossed the 'template path' - think of this like car traffic around a multi-way stop sign in North America. However, 0c208c had more than the required separation from a1bc92 - so, 0c208c took a shorter route to intercept the final landing template path.
+
+This visualizations sits in the middle of the transition towards a reinforcement learning formulation that can solve ATC. These subtle discoveries are easy to spot manually. Identifying / labeling these appropriately using raw / processed ADS-B data is still challenging (need to think about scalability as well) - I already started work on the [repo](https://github.com/SNaveenMathew/atc_app), but an efficacious reinforcement learning implementation has to wait.

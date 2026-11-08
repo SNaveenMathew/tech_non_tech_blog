@@ -195,7 +195,7 @@
         <button class="speed-option" type="button" data-speed="100" aria-pressed="false">100×</button>
       </div>
       <button id="follow" class="active" type="button" aria-pressed="true" title="Keep the selected aircraft centered">Follow ✈</button>
-      <button id="ghost" class="active" type="button" aria-pressed="true" title="Toggle neighborhood ghost aircraft">Ghosts 👻</button>
+      <button id="ghost" class="active" type="button" aria-pressed="true" title="Toggle neighborhood ghost aircraft">Ghosts 📡</button>
       <span id="clock" aria-live="polite">t = 0:00 / 0:00</span>
       <input id="time" type="range" min="0" value="0" step="1" aria-label="Animation time">
     </div>
@@ -515,7 +515,7 @@
           ctx.font = '500 11px "Consolas", monospace';
           ctx.fillStyle = '#cbd5e1';
           ctx.globalAlpha = 0.85;
-          ctx.fillText(`👻 ${ghost.aircraft}`, current.x + 7, current.y - 3);
+          ctx.fillText(`📡 ${ghost.aircraft}`, current.x + 7, current.y - 3);
 
           if (followedFlight && time <= followedFlight.duration_s) {
             const followedPt = pointAt(followedFlight, time);
